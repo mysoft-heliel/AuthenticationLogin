@@ -30,6 +30,37 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/rNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe seu nome"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/rDtNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe sua data de nascimento"
+                android:inputType="date"
+                android:maxLines="1" />
+
+            <Spinner
+                android:id="@+id/spinnerGraduacao"
+                android:entries="@array/graduacao"
+                android:hint="graduação"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <EditText
+                android:id="@+id/rIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe seu idioma"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
                 android:id="@+id/rEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
