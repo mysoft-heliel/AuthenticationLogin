@@ -16,10 +16,39 @@
         android:id="@+id/text_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="My Beauty"
+        android:textColor="#ff4d4d"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sem tempo, encontre o que precisa aqui"
+        android:textSize="13dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Digite seu Email"/>
+
+    <EditText
+        android:id="@+id/senha_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Digite sua Senha"/>
 
     <Button
         android:onClick="sair"
