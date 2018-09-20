@@ -10,6 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background4"
     tools:context=".MainActivity">
 
     <TextView
@@ -28,6 +29,7 @@
         android:id="@+id/text_slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:text="Sem tempo, encontre o que precisa aqui"
         android:textSize="13dp"
         android:textStyle="italic"
@@ -36,28 +38,70 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/email_login"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:hint="Digite seu Email"/>
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/senha_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:hint="Digite sua Senha"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login:"
+            android:textColor="#595959"
+            android:textSize="15dp" />
 
-    <Button
-        android:onClick="sair"
-        android:text="Sair"
-        style="?android:textAppearanceSmall"
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu Email"
+            android:textColorHint="#595959"
+            android:textColor="#595959"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha"
+            android:textColor="#595959"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/senha_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua Senha"
+            android:textColorHint="#595959"
+            android:textColor="#595959"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registrar" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Entrar" />
+    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBD"
