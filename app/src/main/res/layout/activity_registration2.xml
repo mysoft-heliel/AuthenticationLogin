@@ -10,7 +10,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/background6"
     tools:context=".RegistrationActivity">
 
     <TextView
@@ -46,6 +45,15 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,11 +70,22 @@
                     android:id="@+id/rNome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Digite seu Nome"
                     android:textSize="12dp"
                     android:inputType="text"
                     android:maxLines="1" />
             </LinearLayout>
+
+
+
+
+
+
+            <Spinner
+                android:id="@+id/spinnerGraduacao"
+                android:entries="@array/graduacao"
+                android:hint="Tipo Salão"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,7 +103,6 @@
                 android:id="@+id/rIdioma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Didite seu Idioma"
                 android:textSize="12dp"
                 android:inputType="text"
                 android:maxLines="1" />
@@ -107,7 +125,6 @@
                 android:id="@+id/rEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Didite seu E-Mail"
                 android:textSize="12dp"
                 android:inputType="textEmailAddress"
                 android:maxLines="1" />
@@ -129,7 +146,6 @@
                 android:id="@+id/rPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Didite sua Senha"
                 android:textSize="12dp"
                 android:inputType="textPassword"
                 android:maxLines="1" />
@@ -150,7 +166,6 @@
                     android:id="@+id/rDtNascimento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Digite sua Data de Nascimento"
                     android:textSize="12dp"
                     android:inputType="date"
                     android:maxLines="1" />
@@ -163,13 +178,12 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:textStyle="bold" />
-            <Button
-                android:onClick="voltar"
-                android:text="Voltar"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

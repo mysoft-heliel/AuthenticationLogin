@@ -139,16 +139,10 @@ public class RegistrationActivity extends Activity {
                 }
             });
         }
-
-
-
-
-
-
-
-
-
-
-
+    }
+    public void voltar(View view) {
+        Intent i = new Intent(RegistrationActivity.this, LoginActivity.class);
+        startActivity(i);
+        finish();
     }
 }

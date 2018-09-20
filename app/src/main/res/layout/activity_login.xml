@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/background4"
+    android:background="@drawable/background3"
     tools:context=".LoginActivity">
 
     <TextView
@@ -55,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite seu Email"
+            android:textSize="15dp"
             android:textColorHint="#595959"
             android:textColor="#595959"/>
     </LinearLayout>
@@ -67,7 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha"
+            android:text="Senha:"
             android:textColor="#595959"
             android:textSize="15dp" />
 
@@ -76,34 +77,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite sua Senha"
+            android:textSize="15dp"
+            android:inputType="textPassword"
             android:textColorHint="#595959"
             android:textColor="#595959"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:orientation="horizontal">
-
         <Button
+            android:layout_marginTop="190dp"
             android:onClick="registrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Registrar" />
-
-        <Space
-            android:layout_width="50dp"
-            android:layout_height="0dp"/>
 
         <Button
             android:onClick="entrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Entrar" />
-    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBD"
